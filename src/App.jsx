@@ -1,13 +1,11 @@
-import react from 'react'
+import React from 'react'
 import './App.css'
+import Header from './Component/Header'
 
 function App() {
-
   return (
     <>
-     <h1 class="text-3xl font-bold underline text-amber-200">
-    Hello world!
-  </h1>
+      <Header />
     </>
   )
 }
