@@ -21,24 +21,28 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2 text-l font-semibold   ">
               <span>
-                <FaPhone color="green" size={15} />
+                <FaPhone color="green" size={17} />
               </span>{" "}
               Call: 123 884400
             </span>
+
+            {/* line */}
+            <div className="h-4 w-px bg-gray-400" />
+
             <span className="flex items-center gap-2 text-l  font-semibold ">
               <span className="text-green-500">
-                <FaMapMarkerAlt color="green" size={15} />
-              </span >{" "}
+                <FaMapMarkerAlt color="green" size={17} />
+              </span>{" "}
               CM HEALTH ENDOWMENT FUND GILGIT
             </span>
           </div>
         </div>
       </div>
-     <hr className="border-t border-gray-300 my-4" />
+      <hr className="border-t border-gray-300 my-4" />
 
       {/* Header */}
       <header className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 py-1 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center ">
             <img
@@ -54,7 +58,7 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-gray-700 hover:text-green-700 font-medium transition-colors"
+                className="text-gray-700 font-semibold hover:text-green-700 hover:underline transition-colors"
               >
                 {link.label}
               </a>
@@ -63,7 +67,7 @@ const Header = () => {
 
           {/* Login Button */}
           <div className="hidden md:block">
-            <button className="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800 font-medium transition-colors flex items-center gap-2">
+            <button className="bg-green-700 text-white px-4 py-2 rounded hover:bg-white hover:text-green-700 border border-green-700 font-medium transition-colors flex items-center gap-2">
               LOGIN <span>→</span>
             </button>
           </div>
