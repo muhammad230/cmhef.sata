@@ -16,34 +16,35 @@ const Header = () => {
   return (
     <>
       {/* Top Contact Bar */}
-      <div className="bg-white px-4 py-2 text-sm text-gray-700">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="bg-white px-4 py-2 text-sm text-gray-700 text-center ">
+        <div className="max-w-7xl mx-auto flex items-center justify-between  mt-3">
           <div className="flex items-center gap-6">
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 text-l font-semibold   ">
               <span>
                 <FaPhone color="green" size={15} />
               </span>{" "}
               Call: 123 884400
             </span>
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 text-l  font-semibold ">
               <span className="text-green-500">
                 <FaMapMarkerAlt color="green" size={15} />
-              </span>{" "}
+              </span >{" "}
               CM HEALTH ENDOWMENT FUND GILGIT
             </span>
           </div>
         </div>
       </div>
+     <hr className="border-t border-gray-300 my-4" />
 
       {/* Header */}
       <header className="bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center ">
             <img
               src="/images/cmhef-logo.png"
               alt="CMHEF Logo"
-              className="w-14 h-14 object-contain cursor-pointer"
+              className="w-16 h-16 object-contain cursor-pointer"
             />
           </div>
 
